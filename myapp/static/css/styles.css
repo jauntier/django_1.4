@@ -1,0 +1,148 @@
+
+
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Header Styles */
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    border-top: 1px solid #4a5568;
+}
+
+/* Section Titles */
+h1, h2 {
+    font-family: 'Merriweather', serif;
+    /* color: #5a67d8; */
+}
+
+/* Paragraph Styles */
+p {
+    line-height: 1.7;
+}
+
+/* Card Styles */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles  */
+ .btn {
+    background-color: #5a67d8;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4c51bf;
+}
+
+/* Form Styles  */
+ input, textarea {
+    background-color: #edf2f7;
+    border: 2px solid #cbd5e0;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #5a67d8;
+    box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.3);
+}
+
+ /* Custom Classes for Specific Elements  */
+ .welcome-message {
+    background-image: linear-gradient(to right, #6b46c1, #805ad5);
+    color: white;
+}
+
+.featured-articles {
+    background-color: #f7fafc;
+    border-left: 4px solid #5a67d8;
+    padding: 1rem;
+}
+
+.latest-articles {
+    background-color: #f7fafc;
+    border-left: 4px solid #5a67d8;
+    padding: 1rem;
+}
+
+.join-community {
+    background-color: #f7fafc;
+    border-left: 4px solid #5a67d8;
+    padding: 1rem;
+}
+
+.get-in-touch {
+    background-color: #f7fafc;
+    border-left: 4px solid #5a67d8;
+    padding: 1rem;
+}
+
+.our-mission {
+    background-color: #f7fafc;
+    border-left: 4px solid #5a67d8;
+    padding: 1rem;
+}
+
+.popular-categories {
+    background-color: #f7fafc;
+    border-left: 4px solid #5a67d8;
+    padding: 1rem;
+}
+
+
+
+.readers-say {
+    background-color: #f7fafc;
+    border-left: 4px solid #5a67d8;
+    padding: 1rem;
+}
+
+.get-started {
+    background-color: #f7fafc;
+    border-left: 4px solid #5a67d8;
+    padding: 1rem;
+}
+
+.text-purple-900 {
+    color: #5a67d8;
+} 
+
+ /* Media Queries for Responsive Design  */
+ @media (min-width: 768px) {
+    .welcome-message {
+        padding: 2rem;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .welcome-message {
+        padding: 3rem;
+    }
+
+    .card {
+        padding: 2.5rem;
+    }
+} 

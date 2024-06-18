@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-purple-600 text-white py-4">
+        <div class="max-w-5xl mx-auto flex justify-between items-center px-4">
+            <h1 class="text-3xl font-bold" >{{ title }}</h1>
+            <nav class="space-x-4">
+                <a href="{% url 'home' %}" class="text-lg hover:underline">Home</a>
+                <a href="{% url 'about' %}" class="text-lg hover:underline">About</a>
+                <a href="{% url 'contact' %}" class="text-lg hover:underline">Contact</a>
+                <a href="{% url 'index' %}" class="text-lg hover:underline">Index</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="max-w-5xl mx-auto px-4 py-8">
+        <p class="text-lg leading-relaxed text-gray-700">
+           
+            {% block content %}
+            {% endblock %}
+        </p>
+    </main>
+    
+    <footer class="bg-gray-800 text-gray-400 py-4 mt-8">
+        <div class="max-w-5xl mx-auto text-center px-4">
+            <p>&copy; 2024 My Portfolio Website</p>
+        </div>
+    </footer>
+</body>
+</html>
