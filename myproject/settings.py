@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-kkm6v&klig0gl!*xypc$=a56)8c))#=ze_7wqpvozd%=ce+qx(
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['blog_lore.onrender.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
